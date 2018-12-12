@@ -2,8 +2,6 @@
 
 We are going to build a `<CheckboxList />` component and learn a few patterns for making components flexible, easy to use, and easy to change.
 
-[Final Demo](designing-reusable-ui-components.surge.sh)
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
