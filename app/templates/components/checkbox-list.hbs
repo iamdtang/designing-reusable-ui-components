@@ -1,7 +1,10 @@
 <ul>
   {{#each @items as |item|}}
     <li>
-      <input type="checkbox" oninput={{action "handleCheck" item}}>
+      <input
+        type="checkbox"
+        checked={{in-set this.checkedItemsSet item}}
+        oninput={{action "handleCheck" item}}>
       {{item.name}}
     </li>
   {{/each}}
