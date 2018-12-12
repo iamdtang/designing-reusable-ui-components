@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 export default Component.extend({
-  checkedItemsSet: computed('checked', function() {
+  checkedSet: computed('checked', function() {
     return new Set(this.checked);
   }),
   actions: {
@@ -10,12 +10,12 @@ export default Component.extend({
       let { checked } = event.target;
 
       if (checked) {
-        this.checkedItemsSet.add(item);
+        this.checkedSet.add(item);
       } else {
-        this.checkedItemsSet.delete(item)
+        this.checkedSet.delete(item)
       }
 
-      this.onCheck(Array.from(this.checkedItemsSet));
+      this.onCheck(Array.from(this.checkedSet));
     }
   }
 });
