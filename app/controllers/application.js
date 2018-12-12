@@ -3,10 +3,13 @@ import Controller from '@ember/controller';
 export default Controller.extend({
   init() {
     let teamMembers = [
-      { name: 'Richard' },
+      { name: 'Richard Hendrix' },
+      { name: 'Jared Dunn' },
       { name: 'Dinesh' },
-      { name: 'Gilfoyl' },
-      { name: 'Monica' }
+      { name: 'Gilfoyle' },
+      { name: 'Monica' },
+      { name: 'Jian-Yang' },
+      { name: 'Gavin Belson' }
     ];
 
     this.setProperties({
