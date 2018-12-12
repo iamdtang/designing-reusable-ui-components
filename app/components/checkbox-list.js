@@ -9,8 +9,6 @@ export default Component.extend({
     handleCheck(item, event) {
       let { checked } = event.target;
 
-      // console.log(item, checked);
-
       if (checked) {
         this.checkedItemsSet.add(item);
       } else {
