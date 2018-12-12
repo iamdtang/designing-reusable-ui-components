@@ -1,8 +1,7 @@
 <ul>
   {{#each @items as |item|}}
     <li>
-      <input type="checkbox" oninput={{action "handleCheck" item}}>
-      {{item.name}}
+      {{yield item (action "handleCheck" item) this.checkedSet}}
     </li>
   {{/each}}
 </ul>
