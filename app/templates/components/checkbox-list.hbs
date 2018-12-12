@@ -1,11 +1,11 @@
 <ul>
   {{#each @items as |item|}}
     <li>
-      <input
-        type="checkbox"
-        checked={{in-set this.checkedItemsSet item}}
-        oninput={{action "handleCheck" item}}>
-      {{item.name}}
+      {{yield
+        item
+        (component "checkbox"
+          checked=(in-set this.checkedSet item)
+          handleCheck=(action "handleCheck" item))}}
     </li>
   {{/each}}
 </ul>
