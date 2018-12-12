@@ -1,7 +1,7 @@
 <CheckboxList
   @items={{teamMembers}}
   @checked={{checkedTeamMembers}}
-  @onCheck={{action "handleCheck"}} as |item Checkbox|>
+  @onCheck={{action "handleCheck"}} as |teamMember Checkbox|>
   <Checkbox class="my-custom-class" />
-  {{item.name}}
+  {{teamMember.name}}
 </CheckboxList>
