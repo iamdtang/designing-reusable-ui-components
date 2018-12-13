@@ -5,7 +5,9 @@
         item
         (component "checkbox"
           checked=(in-set this.checkedSet item)
-          handleCheck=(action "handleCheck" item))}}
+          onCheck=(action "handleCheck" item))}}
     </li>
   {{/each}}
 </ul>
+
+{{!-- <Checkbox @checked={{true}} @onCheck={{action "doSomething"}} /> --}}
