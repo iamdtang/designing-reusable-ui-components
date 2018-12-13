@@ -2,4 +2,10 @@
 <CheckboxList
   @items={{teamMembers}}
   @checked={{checkedTeamMembers}}
-  @onCheck={{action "handleCheck"}} />
+  @onCheck={{action "handleCheck"}} as |teamMember handleCheck checkedSet|>
+  <input
+    type="checkbox"
+    checked={{in-set checkedSet teamMember}}
+    oninput={{handleCheck}}>
+  {{teamMember.name}}
+</CheckboxList>
