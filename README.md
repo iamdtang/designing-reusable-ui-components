@@ -8,7 +8,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/): `npm i ember-cli -g`
+* [Ember CLI](https://ember-cli.com/): `npm install -g ember-cli`
 * [Google Chrome](https://google.com/chrome/)
 
 ## Installation
