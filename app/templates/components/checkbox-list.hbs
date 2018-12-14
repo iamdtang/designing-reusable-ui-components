@@ -1,7 +1,13 @@
 <ul>
   {{#each @items as |item|}}
     <li>
-      {{yield item (action "handleCheck" item) this.checkedSet}}
+      {{yield
+        item
+        (component "checkbox"
+          checked=(in-set this.checkedSet item)
+          onCheck=(action "handleCheck" item))}}
     </li>
   {{/each}}
 </ul>
+
+{{!-- <Checkbox @checked={{true}} @onCheck={{action "doSomething"}} /> --}}
