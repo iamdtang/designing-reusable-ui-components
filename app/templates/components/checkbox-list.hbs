@@ -1,0 +1,11 @@
+<ul>
+  {{#each @items as |item|}}
+    <li>
+      <input
+        type="checkbox"
+        checked={{in-set this.checkedSet item}}
+        oninput={{action "handleCheck" item}}>
+      {{item.name}}
+    </li>
+  {{/each}}
+</ul>
